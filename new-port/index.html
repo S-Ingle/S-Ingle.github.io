@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Scott Ingle | Portfolio</title>
+  <meta name="description" content="The design portfolio of Scott Ingle">
+  <meta name="author" content="Scott Ingle">
+  
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,600" rel="stylesheet">
+  
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  
+  
+ <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+ <div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <h1><a href="#top">My Portfolio</a></h1>
+        <ul>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#about-me">About Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+ <!-- End Nav -->
+  
+ <header class="header bluegreen" id="top">
+   	
+		
+     <img class="logo" src="images/logo.png" alt="Logo for graphic designer, Scott Ingle">
+     <canvas id="background-canvas"></canvas>
+  
+	
+</header>
+ 
+ <!-- End Header -->
+ 
+<div class="container main" id="my-work">
+	<div class="row">
+		<div class="four columns portfolio">
+
+			<a class="image-link" href="images/4.jpg"><img  src="images/4.jpg" alt="Rock band Dog Daze logo"></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/7.jpg"><img  src="images/7.jpg" alt="Drive-by Pizza logo"></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/6.jpg"><img  src="images/6.jpg" alt="Tarpon Tri Triathlon logo"></a>
+    </div>
+	</div>
+	
+	<div class="row" style="margin-bottom: 10%;">
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/3.jpg"><img  src="images/3.jpg" alt="Mingle's Handcrafted Jewerly logo"></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/1.gif"><img  src="images/1.gif" alt="Animated logo for student video at GCSC"></a>
+		</div>
+		<div class="four columns portfolio">
+			<a class="image-link" href="images/2.jpg"><img  src="images/2.jpg" alt="The Panama City News Herald graphic"></a>
+		</div>
+    </div> 
+	</div>
+  
+  <!--<div class="row">
+    <div class="four columns portfolio"></div>
+    <div class="four columns portfolio"></div>
+    <div class="four columns portfolio"></div>
+  </div>-->
+ 
+<!-- End Container -->
+  
+  
+<div class="row bluegreen" id="about-me">
+  <div class="container">
+    <div class="ten columns">
+    <h2 class="bio">Hello,</h2>
+    <p class="bio">
+      I'm Scott and I'm a designer living in Panama City, Florida. For as long as I can remember, I’ve been interested in graphic design. I have a degree in Digital Media from Gulf Coast State College and am currently studying communications at Florida State University. My background includes experience in print and digital design. I’ve worked on a wide range of projects including: websites, logos, and product and tradeshow graphics. 
+    </p>
+      
+    <div class="social">        
+      <ul>
+        <li><a href="http://www.linkedin.com/in/scott-ingle-38a4b4b0" target="_blank">Linkedin</a></li>
+        <li><a href="mailto:scott.ingle73@gmail.com" target="_blank">Email</a></li>
+      </ul>
+    </div>
+      
+  </div>
+  </div><!-- End Row -->
+  </div><!-- End Container -->
+<!-- Ends About Section -->
+  
+<footer> 
+      <p>All content &copy; 2017</p>  
+</footer>
+  
+<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script type="text/javascript" src="scripts/index.js"></script>
+  
+<script type="text/javascript" src="scripts/menu.js"></script>
+  
+<script type="text/javascript" src="scripts/scroll.js"></script>
+  
+<script type="text/javascript" src="scripts/jquery.magnific-popup.js"></script>
+ 
+<script type="text/javascript">
+  
+  $('.image-link').magnificPopup({
+    type: 'image',
+    mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+    zoom: {
+      enabled: true, // By default it's false, so don't forget to enable it
+
+      duration: 400, // duration of the effect, in milliseconds
+      easing: 'ease-in-out', // CSS transition easing function
+
+      // The "opener" function should return the element from which popup will be zoomed in
+      // and to which popup will be scaled down
+      // By defailt it looks for an image tag:
+      opener: function(openerElement) {
+        // openerElement is the element on which popup was initialized, in this case its <a> tag
+        // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+        return openerElement.is('img') ? openerElement : openerElement.find('img');
+      }
+    }
+});
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+</body>
+</html>
+
